@@ -103,7 +103,7 @@ public class CreateNewScreenDialog extends JDialog {
 	
     private JButton createBtn;
     private JButton cancelBtn;
-    private JComboBox<String> sizesComboBox;
+    private JComboBox sizesComboBox;
     private JLabel screenNameLbl;
     private JLabel sizesNameLbl;
     private JSeparator jSeparator1;
@@ -128,8 +128,8 @@ public class CreateNewScreenDialog extends JDialog {
 		sizesNameLbl = new JLabel();
 		sizesNameLbl.setText("Available Screen Sizes");
 		
-		sizesComboBox = new JComboBox<String>();
-		sizesComboBox.setModel(new DefaultComboBoxModel<String>(sizeList));
+		sizesComboBox = new JComboBox();
+		sizesComboBox.setModel(new DefaultComboBoxModel(sizeList));
 		
         jSeparator1 = new JSeparator();
 
